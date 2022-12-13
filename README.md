@@ -1,4 +1,3 @@
-# astrid-leighton ReadMe
 Hi 👋 My name is Astrid Leighton
 ================================
 
