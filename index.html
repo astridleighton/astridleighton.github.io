@@ -1,28 +1,36 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Astrid Leighton</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
-  <body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper" class="navbar navbar-light navbar-expand">
-        <div class="container"><button class="navbar-toggler d-none" data-bs-toggle="collapse" data-bs-target="#"></button>
+
+<body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
             <div class="collapse navbar-collapse">
-                <ul id="sidebar-nav" class="navbar-nav sidebar-nav">
+                <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
                     <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">Astrid</a></li>
                     <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
                     <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#services">Skills</a></li>
                     <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="d-flex masthead" style="background-image: url('bg-masthead.jpg');">
+    <header class="d-flex masthead" style="background: linear-gradient(black, var(--bs-dark) 0%), var(--bs-blue);">
         <div class="container my-auto text-center">
-            <h1 class="mb-1">Astrid Leighton</h1>
-            <h3 class="mb-5"><em>Software Developer</em></h3><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#about">Find Out More</a>
+            <h1 class="text-white mb-1">Astrid Leighton</h1>
+            <h3 class="mb-5"><em class="text-white-50">Software Developer</em></h3><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#about">About Me</a>
             <div class="overlay"></div>
         </div>
     </header>
@@ -30,101 +38,105 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2>Hello, I&#39;m Astrid Leighton, an aspiring software developer.</h2>
-                    <p class="lead mb-5"><span>I love to design and build software </span><a href="https://unsplash.com/">Unsplash</a><span>!</span></p><a class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#services">What We Offer</a>
+                    <h2>Hello, I'm Astrid Leighton, an aspiring software developer.</h2>
+                    <p class="lead mb-5"><span>I love to learning, designing, and building software. Currently, I am a senior in software development at Grand Canyon University and am excited to graduate and bring my skill set into the professional world!&nbsp;</span></p><a class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#services">My Skills</a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="services" class="content-section bg-primary text-white text-center">
+    <section id="services" class="content-section bg-primary text-white text-center" style="--bs-primary: #0dcaf0;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);">
         <div class="container">
             <div class="content-section-heading">
-                <h3 class="text-secondary mb-0">Services</h3>
-                <h2 class="mb-5">What We Offer</h2>
+                <h3 class="text-secondary mb-0">Skills</h3>
+                <h2 class="mb-5">My Experience</h2>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-screen-smartphone"></i></span>
-                    <h4><strong>Responsive</strong></h4>
-                    <p class="mb-0 text-faded">Looks great on any screen size!</p>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-pencil"></i></span>
-                    <h4><strong>Redesigned</strong></h4>
-                    <p class="mb-0 text-faded">Freshly redesigned for Bootstrap 5.</p>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-like"></i></span>
-                    <h4><strong>Favorited</strong></h4>
-                    <p class="mb-0 text-faded"><span>Milions of users </span><i class="fa fa-heart"></i><span> us!</span></p>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-mustache"></i></span>
-                    <h4><strong>Question</strong></h4>
-                    <p class="mb-0 text-faded">I mustache you a question...</p>
-                </div>
-            </div>
+            <h2>Languages</h2>
+            <ul class="list-unstyled">
+                <li class="text-center">Java</li>
+                <li class="text-center">C#</li>
+                <li class="text-center">JavaScript</li>
+                <li class="text-center">HTML/CSS</li>
+                <li class="text-center">SQL</li>
+            </ul>
         </div>
-    </section>
-    <section class="callout" style="background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('bg-callout.jpg');background-position: center center;background-repeat: no-repeat;background-size: cover;">
-        <div class="container text-center">
-            <h2 class="mx-auto mb-5"><span>Welcome to </span><em>your</em><span><br />next website!<br /></span></h2><a class="btn btn-primary btn-xl" role="button" href="#">Download Now!</a>
-        </div>
+        <h2>Frameworks & Technologies</h2>
+        <ul class="list-unstyled">
+            <li>Spring</li>
+            <li>React</li>
+            <li>Express</li>
+            <li>Angular</li>
+            <li>Docker</li>
+            <li>AWS/Heroku</li>
+            <li>ASP.NET</li>
+        </ul>
     </section>
     <section id="portfolio" class="content-section">
         <div class="container">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Portfolio</h3>
+                <h3 class="text-primary mb-0">Portfolio</h3>
                 <h2 class="mb-5">Recent Projects</h2>
             </div>
             <div class="row g-0">
-                <div class="col-lg-6"><a class="portfolio-item" href="#">
-                        <div class="caption">
+                <div class="col-lg-6"><a class="portfolio-item" href="https://github.com/astridleighton/MIDI-Keys">
+                        <div class="caption" style="background: url(&quot;https://img.freepik.com/free-photo/close-up-synthesizer-keys-with-blurred-background_169016-10987.jpg&quot;), rgba(255,255,255,0.36);background-size: cover, auto;">
                             <div class="caption-content">
-                                <h2>Stationary</h2>
-                                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                <h2>MIDI KEys</h2>
+                                <p class="mb-0" style="text-shadow: 0px 0px 4px;">A React-based MIDI web application that allows a user to connect a MIDI device to a computer to hear audio feedback.</p>
                             </div>
-                        </div><img class="img-fluid" src="portfolio-1.jpg" />
+                        </div><img class="img-fluid" src="assets/img/portfolio-1.jpg">
                     </a></div>
                 <div class="col-lg-6"><a class="portfolio-item" href="#">
-                        <div class="caption">
+                        <div class="caption" style="background: url(&quot;https://img.freepik.com/premium-photo/lock-with-key-table_221128-4150.jpg&quot;) center;">
                             <div class="caption-content">
-                                <h2>Ice Cream</h2>
-                                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                <h2>Cryptographic REST API</h2>
+                                <p class="mb-0" style="text-shadow: 0px 0px 4px;">A Java application hosted on AWS&nbsp;that generates blocks of data for user authentication.</p>
                             </div>
-                        </div><img class="img-fluid" src="portfolio-2.jpg" />
+                        </div><img class="img-fluid" src="assets/img/portfolio-2.jpg" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);">
                     </a></div>
                 <div class="col-lg-6"><a class="portfolio-item" href="#">
-                        <div class="caption">
+                        <div class="caption" style="background: url(&quot;https://d3rctclhuobtt7.cloudfront.net/Pictures/1024x536/0/4/3/284043_gettyimages497031116_600812_crop.jpg&quot;);background-size: cover;text-shadow: 0px 0px 10px;">
                             <div class="caption-content">
-                                <h2>Strawberries</h2>
-                                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                <h2>The Bean Machine</h2>
+                                <p class="mb-0">A Java web application with AI integration to generate coffee drinks for authenticated users.</p>
                             </div>
-                        </div><img class="img-fluid" src="portfolio-3.jpg" />
+                        </div><img class="img-fluid" src="assets/img/portfolio-3.jpg">
                     </a></div>
                 <div class="col-lg-6"><a class="portfolio-item" href="#">
-                        <div class="caption">
+                        <div class="caption" style="background: url(&quot;https://www-cdn.eumetsat.int/files/styles/16_9_large/s3/2022-07/clouds_sun-rays_aspot_AdobeStock.jpg?h=d1cb525d&amp;itok=J7Cona2S&quot;);">
                             <div class="caption-content">
-                                <h2>Workspace</h2>
-                                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                <h2>Pro-Temp</h2>
+                                <p class="mb-0">A simple React web application that interacts with weather APIs to allow user to search for and save weather forecast information.&nbsp;</p>
                             </div>
-                        </div><img class="img-fluid" src="portfolio-4.jpg" />
+                        </div><img class="img-fluid" src="assets/img/portfolio-4.jpg">
                     </a></div>
             </div>
         </div>
     </section>
-    <section class="content-section bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="mb-4">The buttons below are impossible to resist..</h2><a class="btn btn-light btn-xl me-4" role="button" href="#">Click Me!</a><a class="btn btn-dark btn-xl me-4" role="button" href="#">Look at Me</a>
+    <section class="content-section bg-primary text-white" style="--bs-primary: #4b2a6c;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);" id="contact">
+        <div class="container text-center" style="width: 559px;">
+            <h2 class="mb-4">Contact</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="fs-5 text-muted card-subtitle mb-2" style="padding: 11px;">Contact Info</h1>
+                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">Email: astridleighton@gmail.com</h6>
+                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">LinkedIn: <a href="www.linkedin.com/in/astrid-leighton-130789223">View Profile</a></h6>
+                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">GitHub: <a href="https://github.com/astridleighton/" alt="Link to GitHub">View Repositories</a></h6>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="contact" class="map"><iframe allowfullscreen frameborder="0" src="https://cdn.bootstrapstudio.io/placeholders/map.html" width="100%" height="400"></iframe></section>
     <footer class="footer text-center">
         <div class="container">
             <ul class="list-inline mb-5">
-                <li class="list-inline-item"><a class="link-light social-link rounded-circle" href="#"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item"><a class="link-light social-link rounded-circle" href="#"><i class="icon-social-twitter"></i></a></li>
-                <li class="list-inline-item"><a class="link-light social-link rounded-circle" href="#"><i class="icon-social-github"></i></a></li>
+                <li class="list-inline-item">&nbsp;<a class="link-light social-link rounded-circle" href="www.linkedin.com/in/astrid-leighton-130789223" style="--bs-primary: #4b2a6c;--bs-primary-rgb: 75,42,108;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item">&nbsp;</li>
+                <li class="list-inline-item">&nbsp;<a class="link-light social-link rounded-circle" href="https://github.com/astridleighton/"><i class="icon-social-github"></i></a></li>
             </ul>
-            <p class="text-muted mb-0 small">Copyright  © Astrid 2023</p>
+            <p class="text-muted mb-0 small">Copyright &nbsp;© Astrid Leighton 2023</p>
         </div><a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
     </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/stylish-portfolio.js"></script>
 </body>
-</html>
 
+</html>
