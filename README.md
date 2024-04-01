@@ -7,7 +7,7 @@ Software Developer
 I am a senior at Grand Canyon University in Software Development with a minor in Worship Arts. I have been learning to program for the past several years and have developed a passion for designing and building functional software. Over the years, I have gained experience in Java, C#, HTML/CSS, JavaScript, SQL, and a little bit of C. I have experience in numerous frameworks such as SpringBoot, Visual Studio, Visual Studio Code, Bootstrap, Eclipse, React, Express, and MySQL Workbench.
 
 * 🌍  I'm based in San Luis Obispo, California | Phoenix, Arizona
-* 🖥️  See my portfolio at [My Website](https://astridleighton.github.io/)
+* 🖥️  See my portfolio at [My Website](https://astridleighton.github.io/) (in progress)
 * ✉️  You can contact me at [astridleighton@gmail.com](mailto:astridleighton@gmail.com)
 * 🧠  Right now, I'm learning React, Express, and Docker
 
