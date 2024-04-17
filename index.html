@@ -52,7 +52,7 @@
         <div class="container my-auto text-center">
             <h1 class="text-white mb-1">MIDI Keys</h1>
             <h3 class="mb-5"><em class="text-white-50">Online Music Synthesizer</em></h3>
-            <p class="lead mb-5 text-black"><span>Designed by Astrid Leighton</span></p>
+            <p class="lead mb-5 text-black light"><span><strong>Designed by Astrid Leighton</strong></span></p>
             <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#about">About ▼</a>
             <div class="overlay"></div>
         </div>
@@ -64,11 +64,7 @@
                     <h2>About</h2>
                     <p class="lead mb-5">
                         <span>
-                            MIDI Keys is a web-based synthesizer built to interact with a MIDI device. <strong>MIDI</strong> stands for <strong>Musical Instrumental Digital Interface</strong>. MIDI is an important musical tool and is commonly used in the music industry today. Normally, to use MIDI, users must download audio software, but MIDI Keys seeks to provide a simple solution with a simple online application.
-                            MIDI Keys allows a user to select and connect to a MIDI device by simply plugging it directly into their computer.
-                            MIDI Keys description...<strong>
-                                Introduction to your Project. What problem were you solving and why were you solving this problem?
-                            </strong>
+                            MIDI Keys is an online synthesizer built to interact with a MIDI device. <strong>MIDI</strong> stands for <strong>Musical Instrumental Digital Interface</strong>. MIDI is an important musical tool and is commonly used in the music industry today. Normally, users must download audio software to use MIDI; however, MIDI Keys provides a simple solution by allowing users to play their MIDI devices directly through the browser. MIDI Keys presents users with numerous samples to play with, allowing them to save samples to their user account or create music without signing in.
                         </span>
                     </p>
                     <a class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#requirements">Requirements ▼</a>
@@ -76,24 +72,25 @@
             </div>
         </div>
     </section>
-    <section id="requirements" class="content-section bg-light text-black" style="--bs-primary: #0dcaf0;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);">
+    <section id="requirements" class="content-section bg-dark text-white" style="--bs-primary: #0dcaf0;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);">
         <div class="container">
             <div class="content-section-heading text-center">
                 <h2>Requirements</h2>
             </div>
             <div class="row">
                 <div class="col-md-6 text-center border rounded p-4">
-                    <h2 class="mt-2">Functional Requirements</h2>
+                    <h2 class="mt-2">Functional</h2>
                     <ul class="list-unstyled">
                         <li>User login and registration</li>
-                        <li>MIDI device connect and disconnection</li>
-                        <li>View list of saved audio samples</li>
-                        <li>Adding/removing saved samples</li>
-                        <li>SQL</li>
+                        <li>MIDI device connect and disconnect</li>
+                        <li>View list of available MIDI devices</li>
+                        <li>View list of available sound samples</li>
+                        <li>Add and/or remove saved samples</li>
+                        <li>View colorized note feedback from on-screen keyboard</li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-center border rounded p-4">
-                    <h2 class="mt-2">Non-Functional Requirements</h2>
+                    <h2 class="mt-2">Non-Functional</h2>
                     <ul class="list-unstyled">
                         <li>Simple site navigation</li>
                         <li>MIDI error handling</li>
@@ -106,10 +103,10 @@
             </div>
         </div>
         <div class="text-center m-5">
-            <a class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#technologies">Technologies ▼</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger border-white" role="button" href="#technologies">Technologies ▼</a>
         </div>
     </section>
-    <section id="technologies" class="content-section bg-dark text-white">
+    <section id="technologies" class="content-section bg-primary text-white">
         <div class="container">
             <div class="content-section-heading text-center">
                 <h2 class="mb-5">Technologies</h2>
@@ -118,11 +115,17 @@
                 <ul>
                     <li>React.js</li>
                     <li>Express.js</li>
-                    <li>MySQL</li>
+                    <li>mySQL</li>
+                    <li>WebMIDI</li>
                     <li>Tone.js</li>
                     <li>AudioKeys</li>
-                    <li>What technologies did you chose and why? What industry best practices were supported in your design and implementation? Is your application deployed in the Cloud? How were DevOps principles applied?</li>
-                    <li>Did you learn any new technologies for this project? If so, what were they and why did you choose to learn those new technologies?</li>
+                    <li>Materials UI</li>
+                    <li>Sass</li>
+                    <br/>
+                    <p>MIDI keys implements a React front end and Express back end using a mySQL database to store user and sample information. WebMIDI, Tone.js, and AudioKeys are third-party libraries utilized to allow for MIDI interaction from the browser. Materials UI and Sass are used to built the front-end elements and icons features within the application.</p>
+                    <p>
+                        Initially, I was largely unfamiliar with React and any of the third-party MIDI libraries utilized within this application, so I chose to learn these new technologies to improve my skills in development. I implemented React as the prominent language of this application as it largely relies on event listening and state changes, allowing it to function well with MIDI events and key presses.
+                    </p>
                 </ul>
             </div>
             <div class="text-center m-5">
@@ -153,15 +156,40 @@
             </div>
         </div>
     </section>
-    <section id="risks" class="content-section bg-primary text-white" style="--bs-primary: #0dcaf0;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);">
+    <section id="risks" class="content-section bg-dark text-white" style="--bs-primary: #0dcaf0;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);">
         <div class="container">
             <h2>Risks and Challenges</h2>
-            <h3>What risks and challenges did you have? How did you overcome these and what resources did you use?  What risk management approaches did you take</h3>
+            <p>Building this application included several risks and challenges, all of which I documented and prioritized in order to stay on track:</p>
+            <ul>
+                <li>Implementing Tone.js</li>
+                    <ul>
+                        <li>I have never worked with Tone.js or WebMIDI so I had to learn these technologies from scratch. Although documentation is available online, projects and usage examples are few.</li>
+                    </ul>
+                <li>Securing application with JSON web tokens and session cookies</li>
+                    <ul>
+                        <li>I have never worked with JWTs or cookies before, so I had to research documentation and best practices in order to integrate these within the application.</li>
+                    </ul>
+                <li>Selecting between MIDI devices</li>
+                    <ul>
+                        <li>Reading and selecting MIDI devices was quite difficult to achieve within this application. Online MIDI players are few and I had to create my architecture and design largely from scratch.</li>
+                        <li>I began with manually connected to a set device and then built out functionality to view all available devices so the user can change the input device using a MIDI context.</li>
+                    </ul>
+                <li>Deriving samples from online resources</li>
+                    <ul>
+                        <li>
+                            Online samples are difficult to find and often present CORS (Cross-Origin Resource Sharing) errors. After much research, I built functions to buffer and load the audio samples correctly from the database.
+                        </li>
+                    </ul>
+                <li>Utilizing input from a MIDI and QWERTY keyboard</li>
+                    <ul>
+                        <li>At first, the goal of the application was solely to read input from a MIDI keyboard, but I determined it would be helpful to also read input from a user's keyboard so they do not need to use a MIDI keyboard to use the application.</li>
+                    </ul>
+            </ul>
             <h2>Outstanding Issues</h2>
-            <h3>...any?</h3>
+                <p>As of now, there are no outstanding issues in this application. However, this application will continue to be improved with new features including: recording functionality, additional samples, and a chord display.</p>
         </div>
         <div class="text-center m-5">
-            <a class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#contact">More Information ▼</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger border-white" role="button" href="#contact">Contact Information ▼</a>
         </div>
     </section>
     <section class="content-section bg-primary text-white" style="--bs-primary: #4b2a6c;/*--bs-primary-rgb: 75,42,108;*/background: var(--bs-blue);" id="contact">
@@ -171,8 +199,8 @@
                 <div class="card-body">
                     <h1 class="fs-5 text-muted card-subtitle mb-2" style="padding: 11px;">Contact Info</h1>
                     <h6 class="display-6 fs-5 text-info card-subtitle mb-2">Email: astridleighton@gmail.com</h6>
-                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">LinkedIn: <a href="www.linkedin.com/in/astrid-leighton-130789223">View Profile</a></h6>
-                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">GitHub: <a href="https://github.com/astridleighton/" alt="Link to GitHub">View Repositories</a></h6>
+                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">LinkedIn: <a href="https://www.linkedin.com/in/astrid-leighton-130789223" alt="Link to LinkedIn Profile" target="_blank">View Profile</a></h6>
+                    <h6 class="display-6 fs-5 text-info card-subtitle mb-2">GitHub: <a href="https://github.com/astridleighton/" alt="Link to GitHub" target="_blank">View Repositories</a></h6>
                 </div>
             </div>
         </div>
